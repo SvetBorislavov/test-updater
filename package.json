@@ -1,6 +1,6 @@
 {
   "name": "electron-vue-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A minimal Electron + Vue application",
   "main": "build/main/main.js",
   "scripts": {
@@ -8,12 +8,13 @@
     "build": "node scripts/build.js && electron-builder",
     "build:win": "node scripts/build.js && electron-builder --win",
     "build:mac": "node scripts/build.js && electron-builder --mac",
-    "build:linux": "node scripts/build.js && electron-builder --linux"
+    "build:linux": "node scripts/build.js && electron-builder --linux",
+    "release": "electron-builder -m -p 'onTagOrDraft'"
   },
-  "repository": "https://github.com/deluze/electron-vue-template",
+  "repository": "https://github.com/SvetBorislavov/test-updater",
   "author": {
-    "name": "Deluze",
-    "url": "https://github.com/Deluze"
+    "name": "SvetBorislavov",
+    "url": "https://github.com/SvetBorislavov"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.1",
@@ -27,6 +28,8 @@
   },
   "dependencies": {
     "dotenv": "^16.3.1",
+    "electron-log": "^5.0.0",
+    "electron-updater": "^6.1.4",
     "vue": "^3.3.8"
   }
 }
